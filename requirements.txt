@@ -1,0 +1,11 @@
+# 运行依赖（仅一个）
+# 安装：pip install -r requirements.txt
+#
+# 说明：本项目除 requests 外只使用标准库（含 xml.etree.ElementTree 解析 Atom、
+# hashlib、json、re、math、datetime），因此无需虚拟环境即可运行。
+#
+# 变更记录：抓取层已从"HTML 抓取 + BeautifulSoup 解析"切换到 arXiv 官方
+# Atom API，因此不再需要 beautifulsoup4。
+
+requests>=2.28          # HTTP 请求：arXiv Atom API（retriever.py）、PDF 下载（executor.py）
+

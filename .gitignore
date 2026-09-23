@@ -1,0 +1,41 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ---- 运行产物（可随时重新生成）----
+# 下载的论文 PDF（python main.py --download）
+arxiv_pdfs/
+# 历史回溯重评前的自动备份（python main.py --revaluate）
+papers_metadata.backup.json
+# 对比报告（python main.py --revaluate --report xxx.txt）
+report*.txt
+# 关键词测试导出的统计结果（python test_keywords.py --save xxx.json）
+keywords_report.json
+
+# ---- 编辑器 / 系统 ----
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ---- iOS（ios/）----
+# Xcode 构建产物。
+# ⚠️ 用 `ios/build*/` 而不是逐个列目录名：项目里出现过 `-derivedDataPath build-sim`
+# 这种自取名的目录，漏一个就会把上百 MB 的 .pcm / .dylib 提交进去
+# （实测漏过一次：2517 个文件、.git 涨到 47MB）。
+ios/build*/
+DerivedData/
+*.xcuserstate
+# Xcode 个人配置（共享 scheme 在 xcshareddata 下，需要提交）
+xcuserdata/
+# SwiftPM 构建缓存
+ios/**/.build/
+ios/**/.swiftpm/
+.swiftpm/
+# 金标准文件由 tools/export_golden.py 生成，属于测试数据，需要提交；
+# 这里只忽略它的临时导出位置
+/tmp/golden.json

@@ -1,0 +1,4496 @@
+{
+ "_comment": "由 tools/export_golden.py 生成，请勿手改。Swift 侧 GoldenParityTests 逐条比对。",
+ "today": "2026-09-22",
+ "default_weights": {
+  "title": 0.2,
+  "author": 0.2,
+  "abstract": 0.15,
+  "recency": 0.15,
+  "topic": 0.3
+ },
+ "weight_sets": {
+  "default": {
+   "title": 0.2,
+   "author": 0.2,
+   "abstract": 0.15,
+   "recency": 0.15,
+   "topic": 0.3
+  },
+  "old": {
+   "title": 0.15,
+   "author": 0.15,
+   "abstract": 0.3,
+   "recency": 0.1,
+   "topic": 0.3
+  },
+  "custom": {
+   "title": 1.0,
+   "author": 2.0,
+   "abstract": 3.0,
+   "recency": 4.0,
+   "topic": 5.0
+  },
+  "topic_only": {
+   "title": 0.0,
+   "author": 0.0,
+   "abstract": 0.0,
+   "recency": 0.0,
+   "topic": 1.0
+  }
+ },
+ "normalized_weights": {
+  "default": {
+   "title": 0.2,
+   "author": 0.2,
+   "abstract": 0.15,
+   "recency": 0.15,
+   "topic": 0.3
+  },
+  "old": {
+   "title": 0.15,
+   "author": 0.15,
+   "abstract": 0.3,
+   "recency": 0.1,
+   "topic": 0.3
+  },
+  "custom": {
+   "title": 0.066667,
+   "author": 0.133333,
+   "abstract": 0.2,
+   "recency": 0.266667,
+   "topic": 0.333333
+  },
+  "topic_only": {
+   "title": 0.0,
+   "author": 0.0,
+   "abstract": 0.0,
+   "recency": 0.0,
+   "topic": 1.0
+  }
+ },
+ "config_keys": {
+  "default|external=False|llm=False": "2d27de8f1078",
+  "default|external=True|llm=False": "b8e3cce78ca9",
+  "old|external=False|llm=False": "faff6785d2ad",
+  "old|external=True|llm=False": "14d8632c34b9",
+  "custom|external=False|llm=False": "ca02b10b212c",
+  "custom|external=True|llm=False": "e3ba19d9efee",
+  "topic_only|external=False|llm=False": "7888f66bbe9b",
+  "topic_only|external=True|llm=False": "03240a9503f6"
+ },
+ "topic_keywords": {
+  "llm": 1.0,
+  "large language model": 1.0,
+  "language model": 0.7,
+  "agent": 0.9,
+  "multi-agent": 0.9,
+  "agentic": 0.9,
+  "rag": 0.9,
+  "retrieval-augmented": 0.9,
+  "retrieval augmented": 0.9,
+  "reasoning": 0.8,
+  "chain-of-thought": 0.8,
+  "cot": 0.5,
+  "diffusion": 0.8,
+  "multimodal": 0.8,
+  "omni": 0.7,
+  "benchmark": 0.7,
+  "evaluation": 0.6,
+  "safety": 0.7,
+  "alignment": 0.7,
+  "jailbreak": 0.7,
+  "backdoor": 0.7,
+  "quantization": 0.7,
+  "distillation": 0.7,
+  "fine-tuning": 0.6,
+  "federated": 0.7,
+  "privacy": 0.7,
+  "differential privacy": 0.8,
+  "medical": 0.7,
+  "clinical": 0.7,
+  "health": 0.6,
+  "speech": 0.6,
+  "asr": 0.6,
+  "audio": 0.6,
+  "vision": 0.6,
+  "code": 0.6,
+  "software engineering": 0.6,
+  "knowledge graph": 0.7,
+  "graph": 0.5,
+  "reinforcement learning": 0.7,
+  "self-improvement": 0.8,
+  "self-evolution": 0.8,
+  "transformer": 0.6,
+  "attention": 0.5,
+  "gui": 0.7,
+  "cyber": 0.6,
+  "security": 0.7,
+  "finance": 0.6,
+  "financial": 0.6,
+  "robot": 0.6,
+  "embodied": 0.7,
+  "inference": 0.6,
+  "serving": 0.6,
+  "kv cache": 0.7,
+  "gpu": 0.6,
+  "kernel": 0.6,
+  "watermark": 0.6,
+  "unlearning": 0.7
+ },
+ "keyword_hits": {
+  "llm": [
+   "llm"
+  ],
+  "llms": [
+   "llm"
+  ],
+  "LLM": [
+   "llm"
+  ],
+  "large language model": [
+   "language model",
+   "large language model"
+  ],
+  "xllm": [],
+  "llmX": [],
+  "cot": [
+   "cot"
+  ],
+  "scotland": [],
+  "graph": [
+   "graph"
+  ],
+  "paragraph": [],
+  "rag": [
+   "rag"
+  ],
+  "storage": [],
+  "multi-agent": [
+   "agent",
+   "multi-agent"
+  ],
+  "multi-agents": [
+   "agent",
+   "multi-agent"
+  ],
+  "chain-of-thought": [
+   "chain-of-thought"
+  ],
+  "retrieval-augmented": [
+   "retrieval-augmented"
+  ],
+  "kv cache": [
+   "kv cache"
+  ],
+  "kv caches": [
+   "kv cache"
+  ],
+  "大语言模型的llm能力": [],
+  "  llm  ": [
+   "llm"
+  ]
+ },
+ "content_hashes": [
+  {
+   "name": "title_empty",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00000",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "hash": "d91acdb00f7b2603"
+  },
+  {
+   "name": "title_na",
+   "paper": {
+    "title": "N/A",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00001",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "hash": "d88eee4e6b3c0652"
+  },
+  {
+   "name": "title_2_words",
+   "paper": {
+    "title": "Fast Model",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00002",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "hash": "725abe6d3b48c565"
+  },
+  {
+   "name": "title_5_words",
+   "paper": {
+    "title": "A Theory Of Fast Model Inference",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00003",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "hash": "2d04d929746438ee"
+  },
+  {
+   "name": "title_8_words",
+   "paper": {
+    "title": "Sparse Attention Kernels For Long Context Language Modelling",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00004",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "hash": "f72cc9b1c766b78d"
+  },
+  {
+   "name": "title_20_words",
+   "paper": {
+    "title": "A Unified Hierarchical Framework For Robust Adaptive Efficient Scalable Multimodal Reasoning And Evaluation Of Large Language Model Agents",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00005",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "hash": "8b71bed974f61226"
+  },
+  {
+   "name": "title_25_words",
+   "paper": {
+    "title": "A Unified Hierarchical Framework For Robust Adaptive Efficient Scalable Multimodal Reasoning And Evaluation Of Large Language Model Agents In Real World Deployment Settings Today",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00006",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "hash": "8549a469407274c1"
+  },
+  {
+   "name": "title_26_words",
+   "paper": {
+    "title": "A Unified Hierarchical Framework For Robust Adaptive Efficient Scalable Multimodal Reasoning And Evaluation Of Large Language Model Agents In Real World Deployment Settings Today Moreover",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00007",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "hash": "24eb576b933f5dee"
+  },
+  {
+   "name": "title_colon",
+   "paper": {
+    "title": "Beyond Retrieval: A New Approach To Grounding",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00008",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "hash": "d4e5fd5cfcfc4a38"
+  },
+  {
+   "name": "title_question",
+   "paper": {
+    "title": "Can Diffusion Models Reason?",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00009",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "hash": "8b7b04ded97a9ca2"
+  },
+  {
+   "name": "title_method_word",
+   "paper": {
+    "title": "Rethinking Benchmark Design For Agents",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00010",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "hash": "9ec9f70de5e099a5"
+  },
+  {
+   "name": "title_template",
+   "paper": {
+    "title": "Prompt Compression Is All You Need",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00011",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "hash": "171f499a6d952eac"
+  },
+  {
+   "name": "hash_all_empty",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "abstract": "",
+    "submission_time": ""
+   },
+   "hash": "1b34fd262a396b4a"
+  },
+  {
+   "name": "hash_missing_keys",
+   "paper": {},
+   "hash": "1b34fd262a396b4a"
+  },
+  {
+   "name": "hash_none_values",
+   "paper": {
+    "title": null,
+    "authors": null,
+    "abstract": null,
+    "submission_time": null
+   },
+   "hash": "1b34fd262a396b4a"
+  },
+  {
+   "name": "hash_unicode",
+   "paper": {
+    "title": "中文标题",
+    "authors": "张三, 李四",
+    "abstract": "摘要内容",
+    "submission_time": "2026-09-01"
+   },
+   "hash": "242d5d90ddf73234"
+  }
+ ],
+ "comparison": {
+  "comparable": 4,
+  "changed": 4,
+  "mean_delta": 12.25,
+  "mean_abs_delta": 14.75,
+  "max_up_title": "P2",
+  "max_up_delta": 29.0,
+  "max_down_title": "P0",
+  "max_down_delta": -5.0,
+  "top_overlap": 1,
+  "spearman": 0.19999999999999996,
+  "entries": [
+   {
+    "title": "P2",
+    "before_score": 70.0,
+    "after_score": 99.0,
+    "score_delta": 29.0,
+    "before_rank": 3,
+    "after_rank": 1,
+    "rank_delta": 2
+   },
+   {
+    "title": "P1",
+    "before_score": 80.0,
+    "after_score": 95.0,
+    "score_delta": 15.0,
+    "before_rank": 2,
+    "after_rank": 2,
+    "rank_delta": 0
+   },
+   {
+    "title": "P0",
+    "before_score": 90.0,
+    "after_score": 85.0,
+    "score_delta": -5.0,
+    "before_rank": 1,
+    "after_rank": 3,
+    "rank_delta": -2
+   },
+   {
+    "title": "P3",
+    "before_score": 60.0,
+    "after_score": 70.0,
+    "score_delta": 10.0,
+    "before_rank": 4,
+    "after_rank": 4,
+    "rank_delta": 0
+   }
+  ],
+  "top_after_titles": [
+   "P2",
+   "P1"
+  ]
+ },
+ "cases": [
+  {
+   "name": "title_empty",
+   "cover": "title: 空标题 -> 0.0",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00000",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 8.5,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "d91acdb00f7b2603",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "title_na",
+   "cover": "title: N/A -> 0.0",
+   "weights": "default",
+   "paper": {
+    "title": "N/A",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00001",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 8.5,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "d88eee4e6b3c0652",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "title_2_words",
+   "cover": "title: <5 词，无加分",
+   "weights": "default",
+   "paper": {
+    "title": "Fast Model",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00002",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.5,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 18.5,
+    "dimension_scores_with_meta": {
+     "title": 0.5,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "725abe6d3b48c565",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "title_5_words",
+   "cover": "title: 5~7 词 +0.10，命中 method word 'inference'? 不含",
+   "weights": "default",
+   "paper": {
+    "title": "A Theory Of Fast Model Inference",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00003",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.259
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 28.28,
+    "dimension_scores_with_meta": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.259
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "2d04d929746438ee",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "title_8_words",
+   "cover": "title: 8~20 词 +0.20",
+   "weights": "default",
+   "paper": {
+    "title": "Sparse Attention Kernels For Long Context Language Modelling",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00004",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.7,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.423
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 35.19,
+    "dimension_scores_with_meta": {
+     "title": 0.7,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.423
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "f72cc9b1c766b78d",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "title_20_words",
+   "cover": "title: 恰好 20 词边界",
+   "weights": "default",
+   "paper": {
+    "title": "A Unified Hierarchical Framework For Robust Adaptive Efficient Scalable Multimodal Reasoning And Evaluation Of Large Language Model Agents",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00005",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.8,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.909
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 51.78,
+    "dimension_scores_with_meta": {
+     "title": 0.8,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.909
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "8b71bed974f61226",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "title_25_words",
+   "cover": "title: 21~25 词 +0.10",
+   "weights": "default",
+   "paper": {
+    "title": "A Unified Hierarchical Framework For Robust Adaptive Efficient Scalable Multimodal Reasoning And Evaluation Of Large Language Model Agents In Real World Deployment Settings Today",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00006",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.7,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.909
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 49.78,
+    "dimension_scores_with_meta": {
+     "title": 0.7,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.909
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "8549a469407274c1",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "title_26_words",
+   "cover": "title: >25 词，无长度加分",
+   "weights": "default",
+   "paper": {
+    "title": "A Unified Hierarchical Framework For Robust Adaptive Efficient Scalable Multimodal Reasoning And Evaluation Of Large Language Model Agents In Real World Deployment Settings Today Moreover",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00007",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.7,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.909
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 49.78,
+    "dimension_scores_with_meta": {
+     "title": 0.7,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.909
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "24eb576b933f5dee",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "title_colon",
+   "cover": "title: 含冒号 +0.10",
+   "weights": "default",
+   "paper": {
+    "title": "Beyond Retrieval: A New Approach To Grounding",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00008",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.8,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 24.5,
+    "dimension_scores_with_meta": {
+     "title": 0.8,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "d4e5fd5cfcfc4a38",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "title_question",
+   "cover": "title: 问号结尾 +0.05",
+   "weights": "default",
+   "paper": {
+    "title": "Can Diffusion Models Reason?",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00009",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.55,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.33
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 29.39,
+    "dimension_scores_with_meta": {
+     "title": 0.55,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.33
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "8b7b04ded97a9ca2",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "title_method_word",
+   "cover": "title: 命中 method word（benchmark / rethinking）",
+   "weights": "default",
+   "paper": {
+    "title": "Rethinking Benchmark Design For Agents",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00010",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.7,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.551
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 39.02,
+    "dimension_scores_with_meta": {
+     "title": 0.7,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.551
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "9ec9f70de5e099a5",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "title_template",
+   "cover": "title: 命中模板短语 -0.05",
+   "weights": "default",
+   "paper": {
+    "title": "Prompt Compression Is All You Need",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00011",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.55,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 19.5,
+    "dimension_scores_with_meta": {
+     "title": 0.55,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "171f499a6d952eac",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "author_empty",
+   "cover": "author: 空 -> 0.2",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00012",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 8.5,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "d91acdb00f7b2603",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "author_na",
+   "cover": "author: N/A -> 0.2",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "N/A",
+    "url": "https://arxiv.org/abs/2609.00013",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 8.5,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "7e21a8fa12cad052",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "author_single",
+   "cover": "author: 单作者 -0.10",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "Ada Lovelace",
+    "url": "https://arxiv.org/abs/2609.00014",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.4,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 12.5,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.4,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "e2e29698814570b0",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "author_two",
+   "cover": "author: 2 人 +0.20",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "Ada Lovelace, Alan Turing",
+    "url": "https://arxiv.org/abs/2609.00015",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.7,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 18.5,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.7,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "16b27a8865676ddd",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "author_eight",
+   "cover": "author: 8 人（上限）+0.20",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "Author 1, Author 2, Author 3, Author 4, Author 5, Author 6, Author 7, Author 8",
+    "url": "https://arxiv.org/abs/2609.00016",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.7,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 18.5,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.7,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "f70da7ad2350c947",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "author_nine",
+   "cover": "author: 9 人，无人数加分",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "Author 1, Author 2, Author 3, Author 4, Author 5, Author 6, Author 7, Author 8, Author 9",
+    "url": "https://arxiv.org/abs/2609.00017",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.5,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 14.5,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.5,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "8b4ef372d65cf622",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "author_sixteen",
+   "cover": "author: >15 人 -0.05",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "Author 1, Author 2, Author 3, Author 4, Author 5, Author 6, Author 7, Author 8, Author 9, Author 10, Author 11, Author 12, Author 13, Author 14, Author 15, Author 16",
+    "url": "https://arxiv.org/abs/2609.00018",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.45,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 13.5,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.45,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "41b5eb3bbf10ff4b",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "author_etal",
+   "cover": "author: 含 et al -0.05",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "Ada Lovelace, et al",
+    "url": "https://arxiv.org/abs/2609.00019",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.65,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 17.5,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.65,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "896afabea5d1bcf8",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "author_institution",
+   "cover": "author: 命中机构词 +0.20",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "Wei Zhang, Google DeepMind",
+    "url": "https://arxiv.org/abs/2609.00020",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.9,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 22.5,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.9,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "2a45df7adf23df8c",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "author_institution_multi",
+   "cover": "author: 多个机构词",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "Li Ming, Tsinghua, Kai Chen, Microsoft",
+    "url": "https://arxiv.org/abs/2609.00021",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.9,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 22.5,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.9,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "4660e08795d3407e",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "abstract_empty",
+   "cover": "abstract: 空 -> 0.0",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00022",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 8.5,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "d91acdb00f7b2603",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "abstract_na",
+   "cover": "abstract: N/A -> 0.0",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00023",
+    "abstract": "N/A",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 8.5,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "2af591ba3bc69637",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "abstract_short",
+   "cover": "abstract: <=100 字，无长度分",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00024",
+    "abstract": "Short abstract.",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 8.5,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "32511f8bb4e8da44",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "abstract_150",
+   "cover": "abstract: 100~200 字 +0.10",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00025",
+    "abstract": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.1,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 10.0,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.1,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "13b5511e04d3e704",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "abstract_300",
+   "cover": "abstract: 200~500 字 +0.20",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00026",
+    "abstract": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.2,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 11.5,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.2,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "e69d22982d734c67",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "abstract_700",
+   "cover": "abstract: 500~2000 字 +0.30",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00027",
+    "abstract": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 13.0,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "16c8d1babd569a02",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "abstract_2500",
+   "cover": "abstract: 2000~3000 字 +0.20",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00028",
+    "abstract": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.2,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 11.5,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.2,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "f3e25c2f14619c10",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "abstract_3500",
+   "cover": "abstract: >3000 字，无长度分",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00029",
+    "abstract": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.1,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 10.0,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.1,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "b4af36bdd54bec47",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "abstract_method_hit1",
+   "cover": "abstract: 命中 1 个方法词 +0.10",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00030",
+    "abstract": "We propose a new method. yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.5,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 16.0,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.5,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "849d7a596f1bb44b",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "abstract_method_hit2",
+   "cover": "abstract: 命中 >=2 个方法词 +0.20",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00031",
+    "abstract": "We propose a framework that we design for testing. yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.5,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 16.0,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.5,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "e8e1009a57f05499",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "abstract_result_hit1",
+   "cover": "abstract: 命中 1 个结果词 +0.10",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00032",
+    "abstract": "Our approach improves accuracy. yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.6,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 17.5,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.6,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "d61fcc3b16abef89",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "abstract_result_hit2",
+   "cover": "abstract: 命中 >=2 个结果词 +0.20",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00033",
+    "abstract": "We achieve state-of-the-art accuracy and outperform baselines. yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.5,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 16.0,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.5,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "48a42f8d9aed5167",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "abstract_percent",
+   "cover": "abstract: 含百分比 +0.15",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00034",
+    "abstract": "We improve accuracy by 12.5%. yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.65,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 18.25,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.65,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "eda31b49f47c8d09",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "abstract_multiplier",
+   "cover": "abstract: 含 Nx / fold +0.10",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00035",
+    "abstract": "Our method is 3.5x faster and 2-fold cheaper. yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.5,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 16.0,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.5,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "8a3a168423d80311",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "abstract_benchmark",
+   "cover": "abstract: 含 benchmark/dataset/ablation +0.10",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00036",
+    "abstract": "We release a benchmark dataset and run an ablation study. yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.4,
+     "recency": 0.3,
+     "topic": 0.295
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 23.36,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.4,
+     "recency": 0.3,
+     "topic": 0.295
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "2dd474c3c6adb2d0",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "abstract_all_signals",
+   "cover": "abstract: 全信号命中 -> 裁剪到 1.0",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00037",
+    "abstract": "We propose a unified framework and we design a benchmark dataset with a full ablation study. We achieve state-of-the-art accuracy, outperform all baselines and improve F1 by 7.25% while being 4x faster. zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 1.0,
+     "recency": 0.3,
+     "topic": 0.295
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 32.36,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 1.0,
+     "recency": 0.3,
+     "topic": 0.295
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "2ac95d5a40e22044",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "recency_today",
+   "cover": "recency: 0 天 -> 1.0",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00038",
+    "abstract": "",
+    "submission_time": "2026-09-22"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 1.0,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 19.0,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 1.0,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "134e2c2db50fd3b2",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "recency_30",
+   "cover": "recency: 30 天 -> 1.0",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00039",
+    "abstract": "",
+    "submission_time": "2026-08-23"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 1.0,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 19.0,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 1.0,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "aa384b0c32c3f6d2",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "recency_31",
+   "cover": "recency: 31 天，开始线性下降",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00040",
+    "abstract": "",
+    "submission_time": "2026-08-22"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.992,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 18.88,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.992,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "cc2f07b4a2c91c4e",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "recency_60",
+   "cover": "recency: 60 天",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00041",
+    "abstract": "",
+    "submission_time": "2026-07-24"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.75,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 15.25,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.75,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "d1e6775dfc652991",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "recency_90",
+   "cover": "recency: 90 天 -> 0.5",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00042",
+    "abstract": "",
+    "submission_time": "2026-06-24"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.5,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 11.5,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.5,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "09814ae0189c58d5",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "recency_91",
+   "cover": "recency: 91 天，第二段",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00043",
+    "abstract": "",
+    "submission_time": "2026-06-23"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.499,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 11.48,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.499,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "44bbccd251e890f3",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "recency_200",
+   "cover": "recency: 200 天",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00044",
+    "abstract": "",
+    "submission_time": "2026-03-06"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.38,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 9.7,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.38,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "7eec689c9a3946ec",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "recency_365",
+   "cover": "recency: 365 天 -> 0.2",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00045",
+    "abstract": "",
+    "submission_time": "2025-09-22"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.2,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 7.0,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.2,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "e189d1fb78c4897e",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "recency_366",
+   "cover": "recency: >365 天 -> 0.2",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00046",
+    "abstract": "",
+    "submission_time": "2025-09-21"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.2,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 7.0,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.2,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "34a1f7f277fdd8f6",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "recency_future",
+   "cover": "recency: 未来日期 -> 夹到 0 天",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00047",
+    "abstract": "",
+    "submission_time": "2026-09-27"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 1.0,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 19.0,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 1.0,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "dee7901dc9fd87fe",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "recency_bad",
+   "cover": "recency: 无法解析 -> 0.3",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00048",
+    "abstract": "",
+    "submission_time": "not-a-date"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 8.5,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "14e2fcb36a7867af",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "recency_na",
+   "cover": "recency: N/A -> 0.3",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00049",
+    "abstract": "",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 8.5,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "d91acdb00f7b2603",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "recency_unpadded",
+   "cover": "recency: 非零填充日期（Python strptime 可解析）",
+   "weights": "default",
+   "paper": {
+    "title": "",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00050",
+    "abstract": "",
+    "submission_time": "2026-9-1"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 1.0,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 19.0,
+    "dimension_scores_with_meta": {
+     "title": 0.0,
+     "author": 0.2,
+     "abstract": 0.0,
+     "recency": 1.0,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "d5f51e0ea29555f9",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "topic_none",
+   "cover": "topic: 无命中 -> 0.0",
+   "weights": "default",
+   "paper": {
+    "title": "Geology Of Sedimentary Basins",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00051",
+    "abstract": "We study rock formations and mineral deposits in coastal regions. qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.5,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 23.0,
+    "dimension_scores_with_meta": {
+     "title": 0.5,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "9aab9a7044194612",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "topic_single",
+   "cover": "topic: 单命中 llm=1.0",
+   "weights": "default",
+   "paper": {
+    "title": "A Study Of LLM Pipelines",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00052",
+    "abstract": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.7,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.393
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 38.8,
+    "dimension_scores_with_meta": {
+     "title": 0.7,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.393
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "2db0aa34c4d06a97",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "topic_multi",
+   "cover": "topic: 多命中 -> 趋于 1.0",
+   "weights": "default",
+   "paper": {
+    "title": "Agentic RAG With Chain-of-Thought Reasoning For Multimodal Diffusion",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00053",
+    "abstract": "We combine retrieval-augmented generation with alignment and quantization for embodied robots. wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.7,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.986
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 56.59,
+    "dimension_scores_with_meta": {
+     "title": 0.7,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.986
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "a7ffe73cc51db404",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "topic_plural",
+   "cover": "topic: 复数形式（llms / agents）",
+   "weights": "default",
+   "paper": {
+    "title": "Evaluating LLMs And Agents At Scale",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00054",
+    "abstract": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.613
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 43.4,
+    "dimension_scores_with_meta": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.613
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "73a3b5cf2b10b235",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "topic_boundary_negative",
+   "cover": "topic: 词内子串（cot in scotland, graph in paragraph）不应命中",
+   "weights": "default",
+   "paper": {
+    "title": "Scotland Paragraph Studies",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00055",
+    "abstract": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.5,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 23.0,
+    "dimension_scores_with_meta": {
+     "title": 0.5,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "93614afc9030d8b2",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "topic_cjk",
+   "cover": "topic: 中英混排（Python \\b 与 Swift 边界语义需一致）",
+   "weights": "default",
+   "paper": {
+    "title": "大语言模型在多智能体系统中的安全对齐研究",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00056",
+    "abstract": "本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。本文提出一种新的框架，用于提升大语言模型的推理能力与安全性。",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.5,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 23.0,
+    "dimension_scores_with_meta": {
+     "title": 0.5,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "0ea677d1f14dcca8",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "topic_unicode",
+   "cover": "topic/abstract: 非 ASCII 字符长度口径",
+   "weights": "default",
+   "paper": {
+    "title": "Étude Sur Les Modèles De Langage",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00057",
+    "abstract": "Résumé détaillé avec des accents éàüñ. wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 25.0,
+    "dimension_scores_with_meta": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "4c3e94bf60975747",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "venue_none",
+   "cover": "venue: 无发表信号 -> 不参与",
+   "weights": "default",
+   "paper": {
+    "title": "Sparse Kernels For Fast Inference",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00058",
+    "abstract": "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 38.54,
+    "dimension_scores_with_meta": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "fd1428e8297bc77c",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "venue_top_tier",
+   "cover": "venue: 顶会 -> 0.9，并计入 0.10 权重",
+   "weights": "default",
+   "paper": {
+    "title": "Sparse Kernels For Fast Inference",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00059",
+    "abstract": "Accepted at NeurIPS 2026. qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "venue": 0.9
+    },
+    "normalized_weights": {
+     "title": 0.18,
+     "author": 0.18,
+     "abstract": 0.135,
+     "recency": 0.135,
+     "topic": 0.27,
+     "venue": 0.1
+    },
+    "final_score": 43.68,
+    "dimension_scores_with_meta": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "venue": 0.9
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "137f6f39f262aef4",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "venue_workshop",
+   "cover": "venue: workshop -> 0.5",
+   "weights": "default",
+   "paper": {
+    "title": "Sparse Kernels For Fast Inference",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00060",
+    "abstract": "Accepted at the Efficient ML Workshop. qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "venue": 0.5
+    },
+    "normalized_weights": {
+     "title": 0.18,
+     "author": 0.18,
+     "abstract": 0.135,
+     "recency": 0.135,
+     "topic": 0.27,
+     "venue": 0.1
+    },
+    "final_score": 39.68,
+    "dimension_scores_with_meta": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "venue": 0.5
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "5c84c71d7888e56f",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "venue_other",
+   "cover": "venue: 有信号但非顶会/workshop -> 0.3",
+   "weights": "default",
+   "paper": {
+    "title": "Sparse Kernels For Fast Inference",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00061",
+    "abstract": "Accepted for publication. qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "venue": 0.3
+    },
+    "normalized_weights": {
+     "title": 0.18,
+     "author": 0.18,
+     "abstract": 0.135,
+     "recency": 0.135,
+     "topic": 0.27,
+     "venue": 0.1
+    },
+    "final_score": 37.68,
+    "dimension_scores_with_meta": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "venue": 0.3
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "0efb40071151d00f",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "venue_substring_false_positive",
+   "cover": "venue: 锁定子串匹配的已知误报（w*600 含 'www' 命中 WWW 会议）",
+   "weights": "default",
+   "paper": {
+    "title": "Sparse Kernels For Fast Inference",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00062",
+    "abstract": "Accepted for publication. wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "venue": 0.9
+    },
+    "normalized_weights": {
+     "title": 0.18,
+     "author": 0.18,
+     "abstract": 0.135,
+     "recency": 0.135,
+     "topic": 0.27,
+     "venue": 0.1
+    },
+    "final_score": 43.68,
+    "dimension_scores_with_meta": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "venue": 0.9
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "73f12be99be63ddd",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "institution_absent",
+   "cover": "institution: 无机构信息 -> 该维度不参与，分数与 venue_none 相同",
+   "weights": "default",
+   "paper": {
+    "title": "Sparse Kernels For Fast Inference",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00063",
+    "abstract": "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
+    "submission_time": "N/A"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 38.54,
+    "dimension_scores_with_meta": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "fd1428e8297bc77c",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "institution_top_tier",
+   "cover": "institution: 顶尖机构 -> 1.0，并计入 0.10 权重",
+   "weights": "default",
+   "paper": {
+    "title": "Sparse Kernels For Fast Inference",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00064",
+    "abstract": "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
+    "submission_time": "N/A"
+   },
+   "institutions": [
+    "Google DeepMind"
+   ],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "institution": 1.0
+    },
+    "normalized_weights": {
+     "title": 0.18,
+     "author": 0.18,
+     "abstract": 0.135,
+     "recency": 0.135,
+     "topic": 0.27,
+     "institution": 0.1
+    },
+    "final_score": 44.68,
+    "dimension_scores_with_meta": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "institution": 1.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "fd1428e8297bc77c",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "institution_strong_tier",
+   "cover": "institution: 第二档 -> 0.85",
+   "weights": "default",
+   "paper": {
+    "title": "Sparse Kernels For Fast Inference",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00065",
+    "abstract": "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
+    "submission_time": "N/A"
+   },
+   "institutions": [
+    "Seoul National University"
+   ],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "institution": 0.85
+    },
+    "normalized_weights": {
+     "title": 0.18,
+     "author": 0.18,
+     "abstract": 0.135,
+     "recency": 0.135,
+     "topic": 0.27,
+     "institution": 0.1
+    },
+    "final_score": 43.18,
+    "dimension_scores_with_meta": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "institution": 0.85
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "fd1428e8297bc77c",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "institution_unknown",
+   "cover": "institution: 有机构但不在名单里 -> 中性 0.5",
+   "weights": "default",
+   "paper": {
+    "title": "Sparse Kernels For Fast Inference",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00066",
+    "abstract": "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
+    "submission_time": "N/A"
+   },
+   "institutions": [
+    "University of Nowhere"
+   ],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "institution": 0.5
+    },
+    "normalized_weights": {
+     "title": 0.18,
+     "author": 0.18,
+     "abstract": 0.135,
+     "recency": 0.135,
+     "topic": 0.27,
+     "institution": 0.1
+    },
+    "final_score": 39.68,
+    "dimension_scores_with_meta": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "institution": 0.5
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "fd1428e8297bc77c",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "institution_best_of_many",
+   "cover": "institution: 多个机构取最好的一档",
+   "weights": "default",
+   "paper": {
+    "title": "Sparse Kernels For Fast Inference",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00067",
+    "abstract": "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
+    "submission_time": "N/A"
+   },
+   "institutions": [
+    "University of Nowhere",
+    "Tsinghua University",
+    "ACME Corp"
+   ],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "institution": 1.0
+    },
+    "normalized_weights": {
+     "title": 0.18,
+     "author": 0.18,
+     "abstract": 0.135,
+     "recency": 0.135,
+     "topic": 0.27,
+     "institution": 0.1
+    },
+    "final_score": 44.68,
+    "dimension_scores_with_meta": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "institution": 1.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "fd1428e8297bc77c",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "institution_word_boundary_smith",
+   "cover": "institution: 'Smith' 含子串 'mit'，词边界不得命中 MIT",
+   "weights": "default",
+   "paper": {
+    "title": "Sparse Kernels For Fast Inference",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00068",
+    "abstract": "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
+    "submission_time": "N/A"
+   },
+   "institutions": [
+    "Smith College"
+   ],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "institution": 0.5
+    },
+    "normalized_weights": {
+     "title": 0.18,
+     "author": 0.18,
+     "abstract": 0.135,
+     "recency": 0.135,
+     "topic": 0.27,
+     "institution": 0.1
+    },
+    "final_score": 39.68,
+    "dimension_scores_with_meta": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "institution": 0.5
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "fd1428e8297bc77c",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "institution_word_boundary_metabolic",
+   "cover": "institution: 'Metabolic' 含子串 'meta'，不得命中 Meta",
+   "weights": "default",
+   "paper": {
+    "title": "Sparse Kernels For Fast Inference",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00069",
+    "abstract": "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
+    "submission_time": "N/A"
+   },
+   "institutions": [
+    "Department of Metabolic Biology"
+   ],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "institution": 0.5
+    },
+    "normalized_weights": {
+     "title": 0.18,
+     "author": 0.18,
+     "abstract": 0.135,
+     "recency": 0.135,
+     "topic": 0.27,
+     "institution": 0.1
+    },
+    "final_score": 39.68,
+    "dimension_scores_with_meta": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "institution": 0.5
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "fd1428e8297bc77c",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "institution_word_boundary_ethics",
+   "cover": "institution: 'Ethics' 含子串 'eth'，不得命中 ETH Zurich",
+   "weights": "default",
+   "paper": {
+    "title": "Sparse Kernels For Fast Inference",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00070",
+    "abstract": "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
+    "submission_time": "N/A"
+   },
+   "institutions": [
+    "University of Ethics"
+   ],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "institution": 0.5
+    },
+    "normalized_weights": {
+     "title": 0.18,
+     "author": 0.18,
+     "abstract": 0.135,
+     "recency": 0.135,
+     "topic": 0.27,
+     "institution": 0.1
+    },
+    "final_score": 39.68,
+    "dimension_scores_with_meta": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "institution": 0.5
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "fd1428e8297bc77c",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "institution_with_venue",
+   "cover": "institution: 与 venue 同时参与 -> 五维被再分配两次",
+   "weights": "default",
+   "paper": {
+    "title": "Sparse Kernels For Fast Inference",
+    "authors": "",
+    "url": "https://arxiv.org/abs/2609.00071",
+    "abstract": "Accepted at NeurIPS 2026. qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
+    "submission_time": "N/A"
+   },
+   "institutions": [
+    "Google DeepMind"
+   ],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "venue": 0.9,
+     "institution": 1.0
+    },
+    "normalized_weights": {
+     "title": 0.162,
+     "author": 0.162,
+     "abstract": 0.122,
+     "recency": 0.122,
+     "topic": 0.243,
+     "venue": 0.09,
+     "institution": 0.1
+    },
+    "final_score": 49.31,
+    "dimension_scores_with_meta": {
+     "title": 0.6,
+     "author": 0.2,
+     "abstract": 0.3,
+     "recency": 0.3,
+     "topic": 0.451,
+     "venue": 0.9,
+     "institution": 1.0
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "137f6f39f262aef4",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "weights_old_verbose",
+   "cover": "weights: 旧权重口径",
+   "weights": "old",
+   "paper": {
+    "title": "Rethinking Benchmark Design For Agents",
+    "authors": "Ada Lovelace, Alan Turing, Google",
+    "url": "https://arxiv.org/abs/2609.00072",
+    "abstract": "We propose a framework and achieve state-of-the-art accuracy by 5%. wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+    "submission_time": "2026-08-08"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.7,
+     "author": 0.9,
+     "abstract": 0.85,
+     "recency": 0.875,
+     "topic": 0.551
+    },
+    "normalized_weights": {
+     "title": 0.15,
+     "author": 0.15,
+     "abstract": 0.3,
+     "recency": 0.1,
+     "topic": 0.3
+    },
+    "final_score": 74.77,
+    "dimension_scores_with_meta": {
+     "title": 0.7,
+     "author": 0.9,
+     "abstract": 0.85,
+     "recency": 0.875,
+     "topic": 0.551
+    },
+    "config_key": "faff6785d2ad",
+    "content_hash": "acb97a13b7e17e4a",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "weights_custom_unnormalized",
+   "cover": "weights: 未归一化权重 -> 自动缩放",
+   "weights": "custom",
+   "paper": {
+    "title": "Rethinking Benchmark Design For Agents",
+    "authors": "Ada Lovelace, Alan Turing, Google",
+    "url": "https://arxiv.org/abs/2609.00073",
+    "abstract": "We propose a framework and achieve state-of-the-art accuracy by 5%. wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+    "submission_time": "2026-08-08"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.7,
+     "author": 0.9,
+     "abstract": 0.85,
+     "recency": 0.875,
+     "topic": 0.551
+    },
+    "normalized_weights": {
+     "title": 0.067,
+     "author": 0.133,
+     "abstract": 0.2,
+     "recency": 0.267,
+     "topic": 0.333
+    },
+    "final_score": 75.36,
+    "dimension_scores_with_meta": {
+     "title": 0.7,
+     "author": 0.9,
+     "abstract": 0.85,
+     "recency": 0.875,
+     "topic": 0.551
+    },
+    "config_key": "ca02b10b212c",
+    "content_hash": "acb97a13b7e17e4a",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "weights_topic_only_venue",
+   "cover": "weights: 零权重维度 + venue 再分配",
+   "weights": "topic_only",
+   "paper": {
+    "title": "Rethinking Benchmark Design For Agents",
+    "authors": "Ada Lovelace, Google",
+    "url": "https://arxiv.org/abs/2609.00074",
+    "abstract": "Accepted at ICML 2026. We propose a framework. wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+    "submission_time": "2026-09-12"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.7,
+     "author": 0.9,
+     "abstract": 0.5,
+     "recency": 1.0,
+     "topic": 0.551,
+     "venue": 0.9
+    },
+    "normalized_weights": {
+     "title": 0.0,
+     "author": 0.0,
+     "abstract": 0.0,
+     "recency": 0.0,
+     "topic": 0.9,
+     "venue": 0.1
+    },
+    "final_score": 58.56,
+    "dimension_scores_with_meta": {
+     "title": 0.7,
+     "author": 0.9,
+     "abstract": 0.5,
+     "recency": 1.0,
+     "topic": 0.551,
+     "venue": 0.9
+    },
+    "config_key": "7888f66bbe9b",
+    "content_hash": "60b7dcab90b1cf5e",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_000",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "Nuha-Speech: Building General-Purpose Arabic Speech-LLMs",
+    "authors": "Yingzhi Wang, Reem Alhazzani, Muhammad Alqurishi",
+    "url": "https://arxiv.org/abs/2609.11892",
+    "abstract": "As Speech Large Language Models (speech- LLMs ) become increasingly multilingual, Arabic remains significantly underrepresented, highlighting the need for dedicated infrastructure to train and evaluate Arabic speech- LLMs .\n  To address this gap, we introduce Nuha-Speech, a comprehensive initiative to develop general-purpose Arabic speech- LLMs spanning dataset construction, model training, and systematic evaluation. Specifically, we constructed a large-scale Arabic Speech Question-Answering (SQA) corpus comprising over 1.5 million training samples to allow instruction tuning over a broad range of core speech tasks. Then, the corpus was used for supervised fine-tuning based on Qwen-Omni model variants at different scales. Finally, we designed an evaluation framework featuring diverse tasks and tailored metrics. Through this work, we aim to establish foundational infrastructures for Arabic Speech- LLMs under constraints imposed by limited Arabic speech resources.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.7,
+     "author": 0.7,
+     "abstract": 0.6,
+     "recency": 1.0,
+     "topic": 0.926
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 79.77,
+    "dimension_scores_with_meta": {
+     "title": 0.7,
+     "author": 0.7,
+     "abstract": 0.6,
+     "recency": 1.0,
+     "topic": 0.926
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "ec0db79e70b2408f",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_001",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "Biology-in-the-loop: Amortized Adaptive Hit Discovery in CRISPR Screens",
+    "authors": "Carl Edwards, Edward De Brouwer, Xiner Li, Namkyeong Lee, Ehsan Hajiramezanali, Anne Biton, Sara Mostafavi, Gabriele Scalia",
+    "url": "https://arxiv.org/abs/2609.11877",
+    "abstract": "Many biological discovery problems require experiments to be selected sequentially under constrained budgets. CRISPR screening is a prominent example, as exhaustive perturbation testing is often infeasible and candidate perturbations must instead be prioritized over multiple experimental rounds. Despite the importance of this problem, existing benchmarks for adaptive hit discovery remain limited in scale and diversity. Here, we introduce AssayBench-Loop, a large-scale benchmark for adaptive hit discovery comprising 1,389 CRISPR screens across five phenotype categories. Beyond enabling systematic evaluation, its scale makes it possible to learn acquisition strategies across historical experiments. Building on this resource, we introduce AssayLoop, a sequential experimental design framework combining AssayFormer, a transformer-based amortized acquisition policy trained across historical screens to adapt from experimental feedback, with LLM -derived biological priors through an adaptive handoff. In this view, completed experiments become training data for learning how accumulated evidence should guide what to test next, while LLMs provide prior biological knowledge to seed the search. We further introduce AssayLLM, showing that the same principle can be extended directly to an LLM through task-specific post-training. On temporally held-out screens, AssayLoop achieves a 5.67-fold enrichment over random selection and recovers 27.7% of hits after assaying approximately 5% of the candidate library, outperforming existing adaptive-design methods and standalone LLMs , and AssayFormer alone. Performance improves with increasing historical training data and transfers to phenotype categories excluded from training. These results demonstrate the value of learning acquisition policies across historical experiments and combining them with broad biological priors for efficient adaptive hit discovery.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.9,
+     "author": 0.7,
+     "abstract": 0.95,
+     "recency": 1.0,
+     "topic": 0.765
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 84.21,
+    "dimension_scores_with_meta": {
+     "title": 0.9,
+     "author": 0.7,
+     "abstract": 0.95,
+     "recency": 1.0,
+     "topic": 0.765
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "5720b94e973917c4",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_002",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement",
+    "authors": "Yi Duan, Ying Liu, Zirui Tang, Haodong Chen, Jun Zhou, Yumou Liu, Bangrui Xu, Yukai Wu, Sidi Chen, Yuhan Zhou, Haoyu Wang, Xiaoyou Yu, Shaokun Han, Xuzhou Zhu, Le Zhou, Bolin Lu, Wei Zhou, Jiachen Liu, Nuozhou Fang, Jiaxin Tian, Ruoyu Chen, Yuxuan Li, Kai Zuo, Kaiyan Zhang, Jiantao Qiu, et al. (8 additional authors not shown)",
+    "url": "https://arxiv.org/abs/2609.11873",
+    "abstract": "Recursive self-improvement (RSI) enables AI systems to turn experience and feedback into persistent changes that improve both their capabilities and the process of future improvement. We first use the Headroom-Closed Index (HCI) to reveal the problems of existing LLMs , then introduce the RSI concept and its development roadmap: from improvement-execution autonomy, improvement-strategy autonomy, experience-acquisition autonomy, and environment-adaptation autonomy, to recursive meta-improvement. Next we examine RSI across scenarios (e.g., scientific discovery, embodied intelligence, software engineering), highlighting their distinct requirements and development speeds. Drawing on diverse industry practices and preliminary empirical evidence, we connect RSI research with practical systems and identify key challenges to achieving genuine RSI.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.9,
+     "author": 0.4,
+     "abstract": 0.4,
+     "recency": 1.0,
+     "topic": 0.788
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 70.63,
+    "dimension_scores_with_meta": {
+     "title": 0.9,
+     "author": 0.4,
+     "abstract": 0.4,
+     "recency": 1.0,
+     "topic": 0.788
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "e3958815373e49e6",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_003",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "RetroThinker: Enabling Retrospective Thinking in Speech LLMs",
+    "authors": "Yi-Jen Shih, Puyuan Peng, Abdelrahman Mohamed, David Harwath",
+    "url": "https://arxiv.org/abs/2609.11864",
+    "abstract": "Speech large language models (SpeechLLMs) offer reduced latency and retain paralinguistic nuances that are typically lost in cascaded automatic speech recognition (ASR) and text-based LM architectures. However, they continue to lag behind text-only LLMs on complex reasoning tasks, while real-time spoken interaction imposes strict latency constraints. Although prior works employ Chain-of-Thought (CoT) and concurrent reasoning to enhance reasoning capabilities without inducing prohibitive delays, an inherent accuracy-latency trade-off persists. In this paper, we investigate whether a streaming SpeechLLM can dynamically revise its reasoning traces on the fly. We introduce RetroThinker, a multi-stage post-training framework that equips the Moshi model to self-verify and forward-correct CoT steps during inference. RetroThinker combines supervised fine-tuning (SFT) on curated retrospective thinking data with length-based direct preference optimization (DPO) to optimize retrospective during early reasoning (i.e., reasoning concurrently while the user speaks). Evaluated on the GSM8K benchmark, RetroThinker significantly improves the accuracy-latency trade-off over non-retrospective baselines, achieving an 11% absolute accuracy gain at a comparable latency.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.7,
+     "author": 0.7,
+     "abstract": 0.95,
+     "recency": 1.0,
+     "topic": 0.981
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 86.67,
+    "dimension_scores_with_meta": {
+     "title": 0.7,
+     "author": 0.7,
+     "abstract": 0.95,
+     "recency": 1.0,
+     "topic": 0.981
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "3d1d61351ab44bce",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_004",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "Explainability Assistant: A Conversational XAI Interface for Interpreting Energy Consumption Models",
+    "authors": "Rodion Krjutškov, Eduard Barbu, Nikos Sakkas, Sofia Yfanti",
+    "url": "https://arxiv.org/abs/2609.11860",
+    "abstract": "Energy consumption forecasting relies on increasingly complex machine learning (ML) models, such as Genetic Programming-based symbolic regressors, whose predictions can be difficult for facility managers and building operators to interpret. Explainable Artificial Intelligence (XAI) techniques address this opacity, but traditional XAI dashboards require substantial technical expertise and provide limited flexibility for dynamic, context-aware inquiry. Conversational XAI systems offer a promising alternative; however, previous approaches, such as TalkToModel, were constrained by rigid custom grammars and achieved only 76.8% intent-parsing accuracy. This paper introduces the Explainability Assistant, an open-source conversational XAI system that leverages the function-calling capabilities of modern Large Language Models ( LLMs ) to overcome these limitations. The system achieves 94% intent-parsing accuracy, supports flexible natural language interaction, and adapts to different ML problem types without task-specific fine-tuning. We present the system's architecture and report results from a comparative evaluation conducted with energy domain specialists, contrasting the Explainability Assistant with a traditional XAI dashboard. The evaluation suggests improved usability and consistent task accuracy, with all experts unanimously preferring the conversational interface for practical use.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.8,
+     "author": 0.7,
+     "abstract": 0.95,
+     "recency": 1.0,
+     "topic": 0.858
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 84.98,
+    "dimension_scores_with_meta": {
+     "title": 0.8,
+     "author": 0.7,
+     "abstract": 0.95,
+     "recency": 1.0,
+     "topic": 0.858
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "02d0a89f176519a3",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_005",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "From Parameters to Answers: How LLMs Retrieve and Use Their Internal Knowledge",
+    "authors": "Wenkang Wei, Yuan Fang, Renhe Jiang, Hong Cheng, Xingtong Yu",
+    "url": "https://arxiv.org/abs/2609.11859",
+    "abstract": "How does a language model's dependence on query-routing information and target knowledge change as it answers a question? We study this question through layerwise interventions on the hidden state at the end of the question. Across Qwen, Llama, and Gemma, we compare country-continent questions with noun, adjective, and code answers while keeping several fitted measurements distinct. A pair-conditioned request direction describes which country is queried in natural single-country questions; a global request direction describes first- versus second-country requests in paired questions; separate selection candidates test control among contents already available in the hidden state. A diagnostic reanalysis of frozen Qwen natural-question states shows that the pair-conditioned direction grows stronger before interventions on it begin to alter later fitted knowledge, with this causal window opening while answer-supporting content is still forming. The paired three-model trajectories are not uniform: Gemma shows a partially overlapping mid-layer routing-content profile, whereas Llama has no sustained routing-effect window under the same gates. In the paired protocol, dependence on the global request direction decreases from fixed earlier to later layer sets while dependence on fitted content persists. A matched Qwen comparison shows that the pair-conditioned direction retains a late effect, so this operational handoff concerns the global fitted direction rather than all request information. These results separate early readability, natural strength, causal steering, and later content dependence.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.8,
+     "author": 0.7,
+     "abstract": 0.3,
+     "recency": 1.0,
+     "topic": 0.683
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 70.0,
+    "dimension_scores_with_meta": {
+     "title": 0.8,
+     "author": 0.7,
+     "abstract": 0.3,
+     "recency": 1.0,
+     "topic": 0.683
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "c5e71908951232f6",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_006",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "BlueSTAR: Tiered Agentic Architecture for Autonomous Cyber Defense",
+    "authors": "Simona Boboila, Xavier Cadet, Edward Koh, Daniel Balasubramanian, Dirk Van Bruggen, Peter Chin, Alina Oprea",
+    "url": "https://arxiv.org/abs/2609.11852",
+    "abstract": "Cyber attacks are increasingly automated, narrowing the time available for human analysts to detect, reason about, and respond to intrusions. Large language models ( LLMs ) offer a promising foundation for autonomous cyber defense because they can correlate heterogeneous evidence and reason about previously unseen threats. However, directly applying LLMs to operational security telemetry is impractical: raw logs arrive faster than current models can process them, individual events are often ambiguous, and unconstrained LLM actions can introduce significant operational risk. We present BlueSTAR, a tiered agentic architecture for autonomous cyber defense in enterprise IT/OT networks. BlueSTAR first transforms high-volume security telemetry into compact indicators of compromise. We further introduce a resilience metric that jointly captures attacker reach, impact on mission-critical assets, and disruption caused by defensive actions. We evaluate BlueSTAR on two live enterprise IT/OT cyber ranges using seven attack chains based on real-world intrusion techniques. Across attack chains, BlueSTAR retains the fast containment of deterministic response for known threats while successfully defending against attacks requiring contextual and cross-cycle reasoning, including credential theft, repeated compromise, concurrent attackers, and attacks against physical processes.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.8,
+     "author": 0.7,
+     "abstract": 0.6,
+     "recency": 1.0,
+     "topic": 0.942
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 82.26,
+    "dimension_scores_with_meta": {
+     "title": 0.8,
+     "author": 0.7,
+     "abstract": 0.6,
+     "recency": 1.0,
+     "topic": 0.942
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "b76c5377e955e376",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_007",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "SpecGuard: Inference-Time Backdoor Detection For Free",
+    "authors": "Rui Wen, Ahmed Salem, Andrew Paverd, Mark Russinovich, Zheng Li",
+    "url": "https://arxiv.org/abs/2609.11799",
+    "abstract": "Large language models are often fine-tuned, shared, or downloaded from third parties, so a deployed model may carry a hidden backdoor that behaves normally on benign inputs but switches to attacker-controlled behavior when a secret trigger appears. While backdoors can be audited before deployment, runtime monitoring remains important for models that are frequently updated. The challenge is that LLM serving is latency-sensitive: existing inference-time detectors either rely on assumptions about the trigger form, which can fail on stealthy attacks, or require extra model computation, such as input perturbations or an additional generation pass.\n  We introduce SpecGuard, an inference-time backdoor detector that repurposes speculative decoding at zero added model-computation cost. Speculative decoding speeds up inference by using a small draft model to propose tokens and a target model to verify them. We observe that this verification process already exposes a useful signal: when a backdoor is triggered, the target model shifts toward the attacker's behavior, while a clean draft model does not predict this shift, causing the draft-token acceptance rate to change.\n  We formalize when this signal appears and show that an attacker who suppresses it must also weaken the backdoor. Across diverse backdoor types and model families, SpecGuard reliably detects triggered behavior, including stealthy cases where input-level filters are blind, while avoiding the extra generation cost of existing runtime detectors. Speculative decoding therefore doubles as a free, always-on signal for detecting backdoored LLM behavior.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.7,
+     "author": 0.7,
+     "abstract": 0.4,
+     "recency": 1.0,
+     "topic": 0.9
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 75.99,
+    "dimension_scores_with_meta": {
+     "title": 0.7,
+     "author": 0.7,
+     "abstract": 0.4,
+     "recency": 1.0,
+     "topic": 0.9
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "56c7f2205a66c8fc",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_008",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "Whisper-Based Speech Transcription from Videos Across Multiple Languages for Cross-Cultural Understanding",
+    "authors": "Michael Picheny",
+    "url": "https://arxiv.org/abs/2609.11772",
+    "abstract": "Cross-cultural understanding has become increasingly important in today's highly connected, cross-national world. The success of LLM -based technologies is now driving the development of automated tools to aid understanding for nonnative people trying to succeed in cross-cultural environments. Building such automated tools is often done by leveraging in-thewild text, audio, and video data. This paper presents techniques for improving speech recognition-based transcript creation in multiple languages from videos to better train these automated tools. The focus is on processes and speech tools that can easily be used by cross-cultural tool builders without requiring deep speech processing expertise. Using publicly available videos from YouTube and Whisper-based tools, average transcription error rate across seven languages (Spanish, Japanese, Korean, Mandarin, Turkish, Russian, and Hebrew) of 30% are observed. With a modest amount of fine-tuning data, the average error rate can be reduced to 20% making such output much more usable for downstream processing. Speech and metadata associated with these videos that can be used by the community to further refine these experiments are released as well.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.8,
+     "author": 0.4,
+     "abstract": 0.65,
+     "recency": 1.0,
+     "topic": 0.753
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 71.35,
+    "dimension_scores_with_meta": {
+     "title": 0.8,
+     "author": 0.4,
+     "abstract": 0.65,
+     "recency": 1.0,
+     "topic": 0.753
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "1a3f14bb6c8a294b",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_009",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "Recognizing Is Not Reversing: A Controlled Inversion Test of Fact-Preserving News Framing",
+    "authors": "Yi Liu",
+    "url": "https://arxiv.org/abs/2609.11769",
+    "abstract": "Large language models ( LLMs ) are increasingly used to analyze and rewrite news, yet current framing studies mainly evaluate generation, detection, or whether rewritten text appears more neutral. They do not directly show whether a model can undo a known framing transformation while keeping the facts fixed. We introduce a controlled inversion test over three established textual realizations of framing: evaluative lexis, agency realization, and information salience. Across 60 news articles and three intervention strengths, this yields 540 paired variants with preserved atomic facts and recorded edits. Across Qwen, DeepSeek, and Kimi, factual preservation remains near 0.84, whereas intervention reversal is 0.044--0.068. Even when both framing type and direction are recognized correctly, pooled reversal reaches 0.071. These results reveal a clear separation between factual fidelity, framing recognition, and framing inversion: recognizing how an article is framed does not imply that the framing can be undone.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.8,
+     "author": 0.4,
+     "abstract": 0.4,
+     "recency": 1.0,
+     "topic": 0.741
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 67.22,
+    "dimension_scores_with_meta": {
+     "title": 0.8,
+     "author": 0.4,
+     "abstract": 0.4,
+     "recency": 1.0,
+     "topic": 0.741
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "faa7c28769b2eae3",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_010",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "Component-Aware Differential Privacy for Federated Multilingual Speech-LLMs",
+    "authors": "Jordi Luque, Fernando López, Aleix Sant",
+    "url": "https://arxiv.org/abs/2609.11762",
+    "abstract": "Per-layer differential privacy (DP) clipping improves gradient fidelity in federated learning by allocating per-matrix clipping budgets proportional to parameter count. We show that this recipe breaks for speech large language models (speech- LLMs ), when the acoustic encoder and the language decoder differ by an order of magnitude in update norm. Single-pool per-layer methods suffer \\emph{cross-component budget collapse}, dragging word error rate (WER) far from flat global clipping or collapsing training entirely. When the norm imbalance is milder, adaptive single-pool methods partially recover, confirming that collapse severity scales with the inter-component norm ratio. We empirically diagnose the root cause across six per-layer methods and three speech- LLM architectures. We then propose \\emph{$α$-split}, a two-pool allocation that normalises encoder and LLM parameters into independent pools, and show that joint $\\ell_2$ sensitivity and the original $(\\varepsilon,δ)$-DP guarantee are unchanged. At architecture-calibrated $α$, our method recovers WER utility compared to flat DP, while granting the encoder $4.47{\\times}$ tighter per-component noise protection against speaker voice-based gradient-inversion attacks at only $+2.6\\%$ LLM noise overhead.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.6,
+     "author": 0.7,
+     "abstract": 0.7,
+     "recency": 1.0,
+     "topic": 0.936
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 79.58,
+    "dimension_scores_with_meta": {
+     "title": 0.6,
+     "author": 0.7,
+     "abstract": 0.7,
+     "recency": 1.0,
+     "topic": 0.936
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "2c241adc7d297f27",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_011",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "RAG-Safety-Bench: Reliable Evaluation of Retrieval-Augmented LLM Safety",
+    "authors": "Adithiyan Rajan Indira Saravanan, Kathleen C. Fraser",
+    "url": "https://arxiv.org/abs/2609.11758",
+    "abstract": "Allowing large language models ( LLMs ) to retrieve information from a set of trusted documents can increase reliability and reduce hallucination. However, recent work has demonstrated that retrieval-augmented generation (RAG) can have unintended side effects on the overall safety of the generated responses, when prompted for harmful or dangerous content. A clearer understanding of the mechanisms leading to this result is needed, as increasing numbers of end users turn to RAG to incorporate corporate documents and knowledge bases into LLM -based systems. We introduce RAG-Safety-Bench, a benchmark to measure the safety impact of RAG on LLM models. By removing the confounding effect of retriever quality, and cleanly separating the problem into four conditions -- non-RAG, RAG with an oracle document containing the answer to the harmful request, RAG with documents related to the harmful request but without the specific answer, and RAG with random, safe documents -- the benchmark isolates the impacts of different factors in the observed safety degradation. We report results across five open-source LLMs , showing an inverse relationship between benign and unsafe capability, strong evidence that baseline safety guardrails do not lead to downstream safety guarantees in the RAG case, and model-specific support for previous findings that even benign documents can lead to unsafe generation in retrieval-enabled systems.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.8,
+     "author": 0.7,
+     "abstract": 0.7,
+     "recency": 1.0,
+     "topic": 0.961,
+     "venue": 0.9
+    },
+    "normalized_weights": {
+     "title": 0.18,
+     "author": 0.18,
+     "abstract": 0.135,
+     "recency": 0.135,
+     "topic": 0.27,
+     "venue": 0.1
+    },
+    "final_score": 84.9,
+    "dimension_scores_with_meta": {
+     "title": 0.8,
+     "author": 0.7,
+     "abstract": 0.7,
+     "recency": 1.0,
+     "topic": 0.961,
+     "venue": 0.9
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "8c843ca7b38e78ff",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_012",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "Building py-kvcache: A Performance Characterization of External KV Caching for vLLM with NVMe SSDs",
+    "authors": "Joseph Kanichai, Tiziano De Matteis, Animesh Trivedi",
+    "url": "https://arxiv.org/abs/2609.11744",
+    "abstract": "Prefix caching can reduce the time to first token (TTFT) of long-context LLM requests by reusing previously computed key-value (KV) states, but for short prefixes or fast GPUs, recomputation can be faster than loading from an external cache. We characterize this tradeoff in vLLM across GPU, CPU, and NVMe tiers using synthetic workloads, long-context benchmarks, production traces, and find that cache performance depends on transfer granularity, intermediate memory use, and when transfers enter the request schedule, not only on device bandwidth. These findings motivate py-kvcache, a vLLM KV Offload connector with asynchronous direct I/O, bounded shared staging, and scheduler-aware preloading, which starts disk reads while requests are still waiting, overlapping with compute. At 80k tokens, py-kvcache loading from disk is 2.0x faster than LMCache, with preloading contributing 1.34x. With GPU, CPU, and disk caching enabled, it is 1.23x faster than LMCache and within approximately 4% of the native vLLM KV Offload implementation. LongBench and SCBench show that these benefits extend to irregular prefix chains and multi-turn workloads. Bailian trace replays improve TTFT on a weaker GPU, but on an H100 the average request falls below the break-even point and GPU memory alone retains enough prefixes. External KV caching should therefore be treated as a setup specific admission decision. The py-kvcacheimplementation is available at: https://github.com/atlarge-research/py-kvcache.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.8,
+     "author": 0.7,
+     "abstract": 0.85,
+     "recency": 1.0,
+     "topic": 0.683,
+     "venue": 0.9
+    },
+    "normalized_weights": {
+     "title": 0.18,
+     "author": 0.18,
+     "abstract": 0.135,
+     "recency": 0.135,
+     "topic": 0.27,
+     "venue": 0.1
+    },
+    "final_score": 79.43,
+    "dimension_scores_with_meta": {
+     "title": 0.8,
+     "author": 0.7,
+     "abstract": 0.85,
+     "recency": 1.0,
+     "topic": 0.683,
+     "venue": 0.9
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "46bc573f728ce677",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_013",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "Why Does Post-Training Quantization Work?",
+    "authors": "Yuxiang Chen, Michael Beyer, Jun Zhu, Jianfei Chen",
+    "url": "https://arxiv.org/abs/2609.11716",
+    "abstract": "Post-training quantization compresses large language models ( LLMs ) by storing their weights at reduced precision, and each quantized weight introduces an error into the hidden states. Naively, these errors should accumulate with depth and corrupt next-token prediction; randomly initialized models accumulate these discrepancies rapidly, whereas quantized pretrained models accumulate much less hidden-state error and largely maintain downstream task performance, even though they were never trained with quantization noise. This raises the question we address: why does post-training quantization work? Comparing full-precision and quantized forward passes, we identify two mechanisms that characterize pretrained quantization robustness. First, the error a layer newly introduces tends to oppose the error it inherits from the layer's input. The two cancel partially such that the discrepancy between full-precision and quantized passes grows slowly. This counteracting residual interaction develops during pretraining. Our quantitative analysis identifies it as a major factor slowing hidden-error growth. Second, LM-head geometry preferentially preserves the scores and probabilities of high-ranked tokens, which typically represent the model's most confident predictions. Together, these mechanisms explain why quantization error that passes through numerous layers can still produce only small output changes, and we verify the findings across models and quantization settings.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.65,
+     "author": 0.7,
+     "abstract": 0.4,
+     "recency": 1.0,
+     "topic": 0.817,
+     "venue": 0.9
+    },
+    "normalized_weights": {
+     "title": 0.18,
+     "author": 0.18,
+     "abstract": 0.135,
+     "recency": 0.135,
+     "topic": 0.27,
+     "venue": 0.1
+    },
+    "final_score": 74.27,
+    "dimension_scores_with_meta": {
+     "title": 0.65,
+     "author": 0.7,
+     "abstract": 0.4,
+     "recency": 1.0,
+     "topic": 0.817,
+     "venue": 0.9
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "be778ae854531fbc",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_014",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "When Agents Disagree: Bayesian Backward Reasoning as a Label-Free Anchor for Multi-Agent Collective Decision-Making",
+    "authors": "Ken Chen, Wei Wang, Sachith Seneviratne, Hansani Weeratunge, Saman Halgamuge",
+    "url": "https://arxiv.org/abs/2609.11709",
+    "abstract": "When multiple LLM agents yield conflicting answers, the decision-making process dictates whether agent diversity improves performance or merely compounds shared errors. Existing collective decision-making methods, including voting, electoral rules, and LLM judges, rely on forward reasoning: they map evidence to labels in one direction. Although these methods can combine diverse forward traces, they still aggregate estimates that share this evidence-to-label factorization and can inherit correlated errors within the forward pool. We therefore construct a reverse posterior for each instance through Bayesian backward reasoning from an explicit likelihood. The forward and reverse posteriors provide differently factorized approximations of the underlying posterior. Because estimates from different factorizations may tend to share the same error less often, we use Jensen-Shannon divergence to rank agents by cross-path consistency. This cross-path consistency signal underlies three strategies: hard selection (MinJS), soft reweighting (FwdJS), and log-linear fusion (LogLin). Evaluated on DDXPlus across five LLM backbones, our proposed strategies show consistent improvements: MinJS outperforms random selection across all backbones, FwdJS generally improves over the strongest baseline, and LogLin achieves the best performance among the evaluated methods, with its largest gains on the subset where the agents disagree. Despite its weaker standalone accuracy, the reverse posterior serves as a more useful anchor than forward-only alternatives, providing complementary information for collective decision-making. When labeled data are available, a lightweight two-stage calibration can further refine the reverse anchor and improve aggregation performance.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.8,
+     "author": 0.7,
+     "abstract": 0.6,
+     "recency": 1.0,
+     "topic": 0.835
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 79.04,
+    "dimension_scores_with_meta": {
+     "title": 0.8,
+     "author": 0.7,
+     "abstract": 0.6,
+     "recency": 1.0,
+     "topic": 0.835
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "7448550989868486",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_015",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "Language-Augmented Semantic Priors for B-Spline Surface Fitting",
+    "authors": "Yunzhong Lou, Yusheng Luo, Jiahao Li, Yu Song, Xiangdong Zhou",
+    "url": "https://arxiv.org/abs/2609.11708",
+    "abstract": "The use of B-splines and Non-Uniform Rational B-Splines surfaces constitutes the mathematical foundation of contemporary computer-aided design (CAD) systems. Despite long-term progress, geometric kernels in traditional CAD still rely heavily on predetermined heuristic initialization for surface fitting and parameterization. Meanwhile, the procedural semantics and design intent encoded in modeling histories are largely ignored during geometry generation. This disconnect creates a gap between high-level design intent and solver-executable geometric configuration, often leading to suboptimal and semantically inconsistent fitting results. To bridge this gap, we introduce LASP, a Language-Augmented Semantic Priors framework that leverages large language models ( LLMs ) to infer structured, solver-usable B-spline priors from procedural modeling histories. Rather than modifying the geometric kernel itself, LASP operates as a semantic reasoning layer above existing solvers. It first translates modeling histories into rich textual descriptions that capture design intent, geometric context, and functional relationships, and then uses a fine-tuned LLM to predict structured B-spline prior parameters. LASP is trained through a two-stage scheme that combines local geometric regularities with long-range contextual dependencies, producing priors that are both interpretable and semantically coherent. This approach furnishes inductive signals that direct the conventional B-spline fitting process toward solutions that more accurately encapsulate the intended design objectives and demonstrate heightened semantic coherence. Compared to traditional machine learning schemes, the experiments demonstrate that language-driven reasoning can serve as a powerful inductive bias for geometric solving, establishing a new paradigm of language-guided geometric optimization in modern CAD systems.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.6,
+     "author": 0.7,
+     "abstract": 0.6,
+     "recency": 1.0,
+     "topic": 0.871
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 76.14,
+    "dimension_scores_with_meta": {
+     "title": 0.6,
+     "author": 0.7,
+     "abstract": 0.6,
+     "recency": 1.0,
+     "topic": 0.871
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "a7444289f661a785",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_016",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "Negative Self-Distillation: Learning to Reason by Avoiding Flaws",
+    "authors": "Rongcan Pei, Zhepei Wei, Shuyao Xu, Xinyu Zhu, Wei-Lin Chen, Yu Meng",
+    "url": "https://arxiv.org/abs/2609.11699",
+    "abstract": "On-Policy Self-Distillation (OPSD) has emerged as a popular paradigm for large language model ( LLM ) self-improvement, allowing models to act as their own teachers by leveraging privileged information such as ground-truth solutions. However, recent findings indicate that OPSD can severely degrade the performance of LLMs on complex reasoning tasks: By forcing the student to imitate an artificially confident reasoning trace conditioned on privileged information, OPSD inadvertently suppresses expressions of uncertainty and penalizes the exploratory, self-corrective behaviors required to solve challenging problems. To address this, we introduce Negative Self-Distillation (NSD), a new framework that optimizes LLMs by diverging from flawed reasoning rather than imitating privileged solutions. Instead of relying on ground-truth answers or external supervision, NSD uses the model itself to generate a question-specific negative condition (eg, acting as a ``careless reasoner'') and pushes the student's distribution away from this self-generated negative teacher. Naively applying unlearning objectives to achieve this divergence is problematic, as flawed reasoning tokens are confounded with basic linguistic tokens; indiscriminately penalizing both risks catastrophically degrading the model's foundational language capabilities. We resolve this by designing a dynamic gating mechanism that automatically identifies and isolates reasoning-critical tokens, ensuring gradient updates target only behavioral flaws while preserving the model's linguistic priors. Empirically, NSD consistently outperforms OPSD and other label-free, self-bootstrapping reinforcement learning (RL) baselines.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.8,
+     "author": 0.7,
+     "abstract": 0.7,
+     "recency": 1.0,
+     "topic": 0.959,
+     "venue": 0.9
+    },
+    "normalized_weights": {
+     "title": 0.18,
+     "author": 0.18,
+     "abstract": 0.135,
+     "recency": 0.135,
+     "topic": 0.27,
+     "venue": 0.1
+    },
+    "final_score": 84.85,
+    "dimension_scores_with_meta": {
+     "title": 0.8,
+     "author": 0.7,
+     "abstract": 0.7,
+     "recency": 1.0,
+     "topic": 0.959,
+     "venue": 0.9
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "fd5379fc2880d174",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_017",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "COBRA-Skills: Contextual Bandit-Guided Evolution for Agent Skill Optimization",
+    "authors": "Pingchen Lu, Xiangyi Wang, Xiang Li, Jie Mao, Zikun Qu, Junfeng Luo, Yao Shu, Bryan Kian Hsiang Low, Zhongxiang Dai",
+    "url": "https://arxiv.org/abs/2609.11682",
+    "abstract": "Large language model ( LLM ) agents can benefit from reusable skills distilled from prior task experience, yet existing skill optimization methods often rely on costly execution-based evaluation and substantial task data. We introduce \\textbf{COBRA-Skills}, an efficient framework that formulates skill optimization as budgeted sequential optimization over a dynamically evolving candidate space. COBRA-Skills couples contextual-bandit-guided prioritization with evidence-grounded skill evolution, selectively allocating evaluations to promising or informative candidates while continually refining the skill population from execution feedback. Across six heterogeneous agent benchmarks and three target models, COBRA-Skills consistently achieves the strongest average performance among compared methods, while reducing optimization cost by 55--58\\% relative to SkillOpt and using only 50 unique optimization examples per benchmark. Further analyses show that COBRA-Skills remains robust to changes in the agent harness and performs effectively when the target model itself is used for skill generation and refinement.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.8,
+     "author": 0.5,
+     "abstract": 0.7,
+     "recency": 1.0,
+     "topic": 0.914
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 78.91,
+    "dimension_scores_with_meta": {
+     "title": 0.8,
+     "author": 0.5,
+     "abstract": 0.7,
+     "recency": 1.0,
+     "topic": 0.914
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "35443d7ed7e63a24",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_018",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "Ecdysis: Efficient and Effective Training of Runtime Harnesses for LLM Agents",
+    "authors": "Ruiqing Yue, Yu Cui, Zhuoyu Sun, Sicheng Pan, Xianhong Xue, Tingyu Li, Ting Li, Wenzhuo Zhu, Yi Chen, Yifei Liu, Baohan Huang, Zhe Cui, Haibin Zhang, Cong Zuo",
+    "url": "https://arxiv.org/abs/2609.11677",
+    "abstract": "Self-evolving runtime harnesses can substantially improve the capabilities of large language model ( LLM ) agents and provide a promising paradigm for optimizing agent execution. Existing harness evolution methods typically rely on iterative search, repeatedly evaluating and revising candidate harnesses based on execution feedback from task instances. While this paradigm enables continuous harness optimization, it incurs substantial time overhead due to repeated agent executions and code modifications, and may overfit to observed tasks and specific failure patterns, resulting in degraded generalization to unseen tasks. We identify the lack of principled failure diagnosis as a key bottleneck in harness evolution: an observed failure can reflect either model-specific deficiencies or systematic harness deficiencies, and directly optimizing against individual failures can lead to unnecessary model-specific accommodation. We therefore propose Ecdysis, an efficient and effective framework that distinguishes model-specific accommodation from harness-level repair and biases adaptation toward systematic harness deficiencies by identifying recurring cross-task failure patterns. Ecdysis adopts a batch-level cross-instance failure aggregation paradigm to jointly analyze failure evidence from multiple task instances and further introduces Failure-Driven Collaborative Refinement to diagnose failure causes and iteratively refine harness modification specifications. By combining cross-instance failure analysis with multi-role diagnosis, Ecdysis enables more effective harness evolution with lower training time. Experiments show that Ecdysis achieves up to a 1.84x speedup in harness training compared with existing harness evolution methods, while improving the reasoning accuracy of the resulting harnesses by 18.56%.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.9,
+     "author": 0.5,
+     "abstract": 1.0,
+     "recency": 1.0,
+     "topic": 0.918
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 85.54,
+    "dimension_scores_with_meta": {
+     "title": 0.9,
+     "author": 0.5,
+     "abstract": 1.0,
+     "recency": 1.0,
+     "topic": 0.918
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "c792e015635c7258",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_019",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "Your Retriever Already Knows: Distribution-Shape QPP for RAG Retrieval Sufficiency",
+    "authors": "Matyáš Veselý, Michal Průšek, Jiří Franc",
+    "url": "https://arxiv.org/abs/2609.11646",
+    "abstract": "Standard Retrieval-Augmented Generation (RAG) pipelines often provide no reliable inference-time signal of whether retrieval succeeded; on ambiguous or out-of-scope queries, generation may then hallucinate. Motivated by a Czech nuclear-regulator deployment where data sensitivity precludes third-party LLM APIs, we compare three Query Performance Prediction (QPP) paradigms for retrieval sufficiency in RAG: score-based features, a content-based LLM judge, and a hybrid. On the eight ViDoRe vision domains (14,514 queries), our 24 non-lexical features (GeneralQPP; 15 distribution-shape, 5 query-surface, 4 global) reach a weighted-average AUROC of 0.856 at 2 ms per query, ahead of a classic-QPP literature pool (Classic Full, 0.835) and well above a local Qwen3.5 LLM judge (0.649, +0.207 gap; $\\sim$3000$\\times$ faster and cheaper per query). Adding the LLM judgment as one feature (hybrid) matches S1 on ViDoRe (0.863) but gains a statistically significant edge on SÚJB (AUROC 0.911 at Hit@5, adversarial-detection 0.954; 1,510 queries, 500 synthetic adversarial), at LLM latency. Rankings agree across datasets (Spearman $ρ= 0.90$). Under Leave-One-Domain-Out, S1 drops to 0.706; a 13-feature LODO-stepwise subset (S1-Lean) recovers to 0.719 (+0.032 over the literature pool).",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.8,
+     "author": 0.7,
+     "abstract": 0.5,
+     "recency": 1.0,
+     "topic": 0.865
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 78.44,
+    "dimension_scores_with_meta": {
+     "title": 0.8,
+     "author": 0.7,
+     "abstract": 0.5,
+     "recency": 1.0,
+     "topic": 0.865
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "474b394ddc53d983",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_020",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "MAPLE: Memory-Augmented Planning with Language and Evolution",
+    "authors": "Kesheng Chen, Yamin Hu, Wenjian Luo",
+    "url": "https://arxiv.org/abs/2609.11636",
+    "abstract": "Domain practitioners understand their business constraints but may lack operations-research expertise or dedicated support. LLM -based optimization agents translate natural-language requirements into models or solver programs that established optimization tools can execute. This progress makes optimization more accessible, but real-world operations are dynamic: changing demand, resources, and priorities require updates to data, constraints, and objectives. Methods centered on isolated requests offer limited support for rapid adaptation that preserves earlier decisions and reuses useful search results. We introduce MAPLE (Memory-Augmented Planning with Language and Evolution), an agent for maintaining optimization problems through successive natural-language requests. MAPLE combines language-based problem construction with mathematical programming and evolutionary search. It retains the optimization program, accepted plans, earlier updates, and candidate solutions for subsequent requests. We introduce NLDO, a benchmark of 15 trajectories and 180 updates spanning selection, scheduling, rostering, routing, and cloud-resource placement. In the main evaluation, MAPLE completes all trajectories and achieves online scalar quality of 0.951 and a Pareto hypervolume ratio of 0.875. Controlled comparisons further show that maintaining executable state improves update validity and can preserve useful search information across substantial revisions.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.7,
+     "author": 0.7,
+     "abstract": 0.8,
+     "recency": 1.0,
+     "topic": 0.798,
+     "venue": 0.9
+    },
+    "normalized_weights": {
+     "title": 0.18,
+     "author": 0.18,
+     "abstract": 0.135,
+     "recency": 0.135,
+     "topic": 0.27,
+     "venue": 0.1
+    },
+    "final_score": 80.05,
+    "dimension_scores_with_meta": {
+     "title": 0.7,
+     "author": 0.7,
+     "abstract": 0.8,
+     "recency": 1.0,
+     "topic": 0.798,
+     "venue": 0.9
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "afaa9518790450d4",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_021",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "A Training-Free, Alignment-Free Approach to Corporate Intelligence: Application to SEC Filings",
+    "authors": "Jean-François Delpech",
+    "url": "https://arxiv.org/abs/2609.11620",
+    "abstract": "High-dimensional dense text embeddings and large language models face real obstacles in financial-disclosure analysis: context-window limits, hallucination risk, high computational cost, and the arbitrary rotation of vector spaces across independently trained models. We present a training-free, alignment-free framework for corporate intelligence built on deterministic sparse seed vectors. Hashing word strings into a fixed high-dimensional basis places all documents and all temporal epochs in a common coordinate system by construction, removing any need for training or alignment. Accumulating these seed vectors across sentence contexts yields corpus-specific semantic signatures that compose linearly, supporting sub-second document comparison, issuer fingerprinting, tracking of how an issuer's vocabulary shifts between filings, and thematic sentence extraction, all on ordinary CPU hardware. Demonstrating the approach on a multi-year corpus of SEC filings (10-K, 10-Q, 8-K), we show how material corporate events, among them Boeing's 737 MAX crisis, Intel's supply-chain disruptions, and Bunge's acquisition of Viterra, emerge as distinct, interpretable semantic profiles, each traceable to the exact source sentences that produced it, with no domain-specific training and no LLM inference.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.8,
+     "author": 0.4,
+     "abstract": 0.5,
+     "recency": 1.0,
+     "topic": 0.9
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 73.49,
+    "dimension_scores_with_meta": {
+     "title": 0.8,
+     "author": 0.4,
+     "abstract": 0.5,
+     "recency": 1.0,
+     "topic": 0.9
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "661e2805a12a55c4",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_022",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "Who Bears the Risk When Generative AI Enters Transport? A Distributional Sociotechnical Audit of Algorithmic Equity, Synthetic-Data Validity, and Public Trust",
+    "authors": "Amir Rafe, Subasish Das",
+    "url": "https://arxiv.org/abs/2609.11611",
+    "abstract": "Generative artificial intelligence is entering transportation through traveler-facing advisories, synthetic crash-record generation, and policy decision support. Existing governance frameworks lack transport-specific statistical tools to measure distributional risks across heterogeneous populations. We develop a Distributional Sociotechnical Audit (DSA) that integrates algorithmic equity, synthetic-data validity, and public-attitude heterogeneity into one empirical pipeline. The audit analyzes 5,760 persona-controlled queries to four LLM families across 12 demographic cues and four transport topics, uses two cross-family judges and a Wasserstein-2 Equity Dispersion Index, tests three FARS crash-record generators with conditional projected maximum mean discrepancy (cpMMD), fits a Bayesian ordered-logit model to Pew American Trends Panel Wave 152 (N = 4,538), and combines the signals into a continuous Sociotechnical Risk Index. Congestion-pricing advice has the highest persona-based dispersion (mean EDI = 1.96; highest direct EDI = 2.20). CART synthetic crash records fail all conditional tests (p < 0.001), while the Gaussian copula has borderline conditional stress (p = 0.105) despite passing marginal checks. Attitudes to AI vary across demographic strata. Distributional audits and continuous risk indices with sensitivity reporting offer a more defensible basis for transport GenAI governance than categorical approval tiers, which show a 75% assignment flip rate under weight perturbation.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.6,
+     "author": 0.7,
+     "abstract": 0.65,
+     "recency": 1.0,
+     "topic": 0.393
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 62.55,
+    "dimension_scores_with_meta": {
+     "title": 0.6,
+     "author": 0.7,
+     "abstract": 0.65,
+     "recency": 1.0,
+     "topic": 0.393
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "5a1748a13359b16c",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_023",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "Making Alternative Data Work: Context-Augmented LLMs for Financial Forecasting",
+    "authors": "Jihoon Kwon, Lawrence Liu, Daekyung Park, Sumin Kim, Haverty Jack, Hoyoung Lee, Katherine Bjorkman, Josh McKenney, Peter Laurelli, Nicole Kagan, Zach Golkhou, Thorsten Neumann, Edward Tong, Pete Petersen, Yoon Kim, Alejandro Lopez-Lira, Yongjae Lee, Chanyeol Choi",
+    "url": "https://arxiv.org/abs/2609.11607",
+    "abstract": "When forecasting a firm's future financial performance, alternative data - data collected from non-traditional sources such as consumer transactions, web traffic, and prediction markets - can provide timely signals about firms' operating activities and broader market conditions. These signals may reveal information that is not captured by traditional public sources and can therefore provide complementary information for forecasting firms' future financial performance. However, firm-level alternative data often have limited historical coverage, are relevant only to specific prediction targets or subsets of firms, and are distributed across numerous heterogeneous channels, making them difficult to incorporate flexibly into conventional forecasting approaches. Meanwhile, large language models ( LLMs ) can interpret instructions, learn from in-context examples, and generate predictions by combining heterogeneous information without task-specific parameter updates. Motivated by this potential flexibility, we investigate whether an LLM can forecast firm performance by integrating alternative data with other financial information through in-context learning. We propose a two-agent framework that first identifies the firms for which each alternative data channel is likely to be informative and then predicts revenue using firm- and channel-specific context. We evaluate the framework across four commercial alternative data channels. In our experiments, adding alternative data in context alongside other financial information improves the LLM's forecasting relative to either source alone, and these forecasts are more accurate than those of standard forecasting baselines. These findings suggest that LLMs provide a flexible and practical approach to integrating alternative data with heterogeneous financial information.",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.8,
+     "author": 0.45,
+     "abstract": 0.7,
+     "recency": 1.0,
+     "topic": 0.878,
+     "venue": 0.5
+    },
+    "normalized_weights": {
+     "title": 0.18,
+     "author": 0.18,
+     "abstract": 0.135,
+     "recency": 0.135,
+     "topic": 0.27,
+     "venue": 0.1
+    },
+    "final_score": 74.14,
+    "dimension_scores_with_meta": {
+     "title": 0.8,
+     "author": 0.45,
+     "abstract": 0.7,
+     "recency": 1.0,
+     "topic": 0.878,
+     "venue": 0.5
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "594023ee781fb693",
+    "evaluated_on": "2026-09-22"
+   }
+  },
+  {
+   "name": "real_024",
+   "cover": "真实历史记录",
+   "weights": "default",
+   "paper": {
+    "title": "OmniKVQuant: KV Cache Quantization for Omni-LLMs",
+    "authors": "Suho Yoo, Hyunjong Ok, Jongmin Choi, Jihoo Jung, Joon Son Chung",
+    "url": "https://arxiv.org/abs/2609.11582",
+    "abstract": "As Omni-modal large language models (Omni- LLMs ) take in audio, video and text together, their KV cache memory cost grows. KV cache quantization is the de facto approach in text-only LLMs , but its application to Omni- LLMs remains unexplored. In this paper, we analyze how TurboQuant, a representative rotation-based KV cache quantization method, behaves on multimodal caches and identify two critical issues: temporal key drift and heterogeneous value geometry. To address these, we propose OmniKVQuant, a training-free framework that (i) sets the key quantization range over each short window of the input stream; and (ii) rotates values separately per modality. On Qwen2.5-Omni and Qwen3-Omni, OmniKVQuant enables 2-bit KV caches while substantially preserving performance across seven audio-visual benchmarks. We further provide a fused Triton decode kernel that unpacks the 2-bit cache during attention, so no dense FP16 cache is ever built. Code: https://github.com/kaistmm/OmniKVQuant",
+    "submission_time": "2026-09-10"
+   },
+   "institutions": [],
+   "expected": {
+    "dimension_scores": {
+     "title": 0.7,
+     "author": 0.7,
+     "abstract": 0.6,
+     "recency": 1.0,
+     "topic": 0.986
+    },
+    "normalized_weights": {
+     "title": 0.2,
+     "author": 0.2,
+     "abstract": 0.15,
+     "recency": 0.15,
+     "topic": 0.3
+    },
+    "final_score": 81.59,
+    "dimension_scores_with_meta": {
+     "title": 0.7,
+     "author": 0.7,
+     "abstract": 0.6,
+     "recency": 1.0,
+     "topic": 0.986
+    },
+    "config_key": "2d27de8f1078",
+    "content_hash": "64d47325882cc9f4",
+    "evaluated_on": "2026-09-22"
+   }
+  }
+ ]
+}
